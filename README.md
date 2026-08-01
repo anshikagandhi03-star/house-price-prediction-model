@@ -110,13 +110,13 @@ boston-house-price-prediction/
 ## 🙋‍♀️ About Me
 
 I'm a student building toward a career at the intersection of machine learning and finance, currently working on projects to strengthen my portfolio for data science and fintech internships.
-
-- **GitHub:** [your GitHub link]
-- **LinkedIn:** [your LinkedIn link]
+*NAME*-ANSHIKA GANDHI
+*College*-BIT Mesra
+*Branch*-ECE
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is created for educational and learning purposes. Feel free to fork, modify, and improve it with proper attribution.
 
 ---
 
