@@ -31,6 +31,16 @@ The goal of this project is to predict the median value of owner-occupied homes 
 
 > ⚠️ **Note:** This dataset includes a feature (`B`) derived from racial demographics and has been deprecated from `scikit-learn` due to ethical concerns. It is used here purely for educational/portfolio purposes.
 
+## 📊 Exploratory Data Analysis
+
+**Correlation Heatmap**
+
+![Correlation Heatmap](heatmap.png)
+
+**Actual vs Predicted Prices**
+
+![Scatter Plot](scatter_plot.png)
+
 ## 🛠️ Tech Stack
 
 - **Language:** Python 3.x
@@ -45,28 +55,28 @@ The goal of this project is to predict the median value of owner-occupied homes 
 4. **Train-Test Split** – Splitting data for unbiased evaluation
 5. **Model Training** – Fitting an `XGBRegressor` on the training data
 6. **Hyperparameter Tuning** – GridSearchCV / RandomizedSearchCV over parameters such as `n_estimators`, `max_depth`, `learning_rate`, `subsample`
-7. **Model Evaluation** – Assessing performance using RMSE, MAE, and R² score
-8. **Feature Importance** – Visualizing which features drive predictions most
+7. **Model Evaluation** – Assessing performance using RMSE and MAE
+8. **Visualization** – Plotting actual vs predicted prices to inspect fit quality
 
 ## 📊 Results
 
 | Metric | Score |
 |--------|-------|
-| RMSE | 0.887|
+| RMSE | 0.887 |
 | MAE | 2.148 |
 
 ## 📈 Key Insights
 
 - [e.g., `RM` and `LSTAT` were the most important features according to XGBoost's feature importance scores]
-- [e.g., XGBoost outperformed baseline linear regression by X%]
+- [e.g., the scatter plot shows predictions tracking closely with actual prices, with more spread at higher price points]
 - [Add insights specific to your EDA/results]
 
 ## 🚀 How to Run This Project
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/[your-username]/boston-house-price-prediction.git
-   cd boston-house-price-prediction
+   git clone https://github.com/anshikagandhi03-star/house-price-prediction-model.git
+   cd house-price-prediction-model
    ```
 
 2. Create a virtual environment (optional but recommended)
@@ -77,28 +87,25 @@ The goal of this project is to predict the median value of owner-occupied homes 
 
 3. Install dependencies
    ```bash
-   pip install -r requirements.txt
+   pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
    ```
 
 4. Run the notebook
    ```bash
-   jupyter notebook [your-notebook-filename].ipynb
+   jupyter notebook house_price_prediction_using_XGBoost.ipynb
    ```
 
 ## 📁 Repository Structure
 
 ```
-boston-house-price-prediction/
+house-price-prediction-model/
 │
-├── data/
-│   └── boston_housing.csv
-├── [notebook-or-script-filename]
-├── requirements.txt
-├── README.md
-└── LICENSE
+├── BostonHousing.csv
+├── house_price_prediction_using_XGBoost.ipynb
+├── heatmap.png
+├── scatter_plot.png
+└── README.md
 ```
-
-> Update this structure to match your actual repo layout.
 
 ## 🔮 Future Improvements
 
@@ -110,9 +117,10 @@ boston-house-price-prediction/
 ## 🙋‍♀️ About Me
 
 I'm a student building toward a career at the intersection of machine learning and finance, currently working on projects to strengthen my portfolio for data science and fintech internships.
-*NAME*-ANSHIKA GANDHI
-*College*-BIT Mesra
-*Branch*-ECE
+
+**Anshika Gandhi** — BIT Mesra, ECE
+
+- **GitHub:** [anshikagandhi03-star](https://github.com/anshikagandhi03-star)
 
 ## 📄 License
 
